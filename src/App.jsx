@@ -5,7 +5,11 @@ function App() {
 
   useEffect(() => {
     const handler = (event) => {
-      if (event.origin !== "http://localhost:5173") return; // ✅ security check
+      if (
+        event.origin !==
+        "https://example-project-1-huwv2rygx-saadkhan293s-projects.vercel.app"
+      )
+        return; // ✅ security check
       if (event.data?.token) {
         setToken(event.data.token);
         console.log("Token received:", event.data.token);

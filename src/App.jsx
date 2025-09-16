@@ -7,7 +7,7 @@ function App() {
     const handler = (event) => {
       if (
         event.origin !==
-        "https://example-project-1-ruddy.vercel.app/"
+        "https://example-project-1-ruddy.vercel.app"
       )
         return; // ✅ security check
       if (event.data?.token) {

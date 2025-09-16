@@ -23,7 +23,8 @@ function App() {
       <h1>Child React App (Iframe)</h1>
       {token ? (
         <p>
-          Received Token: {token} & data is :::{data}
+          Received Token: {token} & name is :::{data.name} and message is ::{" "}
+          {data.message}
         </p>
       ) : (
         <p>No token yet.</p>
